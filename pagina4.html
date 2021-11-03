@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="contacto, ayuda, preguntas">
+    <meta name="description" content="contacto con nosotros para hacer cualquier tipo de pregunta">
+    <title>Contacto/Acapas3d</title>
+    <link rel="stylesheet" href="style.css">
+        <!-- LETRA DE GOOGLE FONTS INICIO -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Akronim&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+            <!-- LETRA DE GOOGLE FONTS FIN -->
+</head>
+    <body>
+        <header class="contenedor">
+            <h1>A Capas 3D</h1>
+            <nav class="nav">
+                <ul class="menu">
+                    <li class="item"> <a href="index.html" >Inicio</a> </li>
+                    <li class="item"> <a href="pagina1.html">Impresoras</a> </li>
+                    <li class="item"> <a href="pagin2.html">Filamentos</a> </li>
+                    <li class="item"> <a href="pagina3.html">Tutoriales</a> </li>
+                    <li class="item"> <a href="pagina4.html">Contacto</a> </li>
+                </ul>
+            </nav>
+        </header>
+        <h2 class="subtitulo">contacto</h2>
+        <h3><a class="Redes" href="https://www.instagram.com/acapas.3d/?hl=es-la">instagram</a></h3>
+
+        <!-- Formulario -->
+
+        <form enctype="text/plain" action="mailto:maxiwendy2004@gmail.com" method="POST">
+            <div>
+                <label for="escribir">-nombre y apellido</label>
+            <input type="text" name="escribir" required>
+            </div>
+            <br>
+            <br>
+            <div>
+                <label for="genero">-genero</label>
+                <br>
+                <input type="radio" name="genero" value="masculino">masculino
+                <input type="radio" name="genero" value="femenino">femenino
+            </div>
+            <br>
+            <br>
+            <div>
+                <label for="email">-mail</label>
+            <input type="email" name="email" required>
+            </div>
+            <br>
+            <br>
+            <div>
+                <label for="asunto">-asunto</label>
+                <select name="asunto" id="">
+                    <option value="">elija un asunto</option>
+                    <option value="problemas">problemas con la pagina</option>
+                    <option value="servicio">mal servicio</option>
+                </select>
+            </div>
+            <br>
+            <br>
+            <div>
+                <label for="edad">-fecha de nacimiento</label>
+            <input type="date" name="edad" required>
+            </div>
+            <br>
+            <br>
+            <div>
+                <label for="problema">-escriba su problema aqui</label>
+                <input type="text" name="problema">
+            </div>
+            <br>
+            <br>
+            <div>
+                <input type="reset" value="limpiar formulario">
+    
+                <input type="submit" value="enviar">
+            </div>
+
+
+    </body>
+</html>

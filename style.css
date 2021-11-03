@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+/* ----------HEADER----------- */
+
+
+.contenedor {  
+background: rgb(191,205,217);
+background: linear-gradient(to bottom, rgba(191,205,217,1) 77%,#F2AA6B 100%);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100vw;
+    height: auto;
+}
+
+h1{
+    /*  LETRA DE GOOGLE FONTS INICIO */
+    font-family: 'Akronim', cursive;
+    /*  LETRA DE GOOGLE FONTS FIN */
+    color:#295073;
+    font-size: 2.5rem;
+    display: block;
+    margin-left: 1rem;
+}
+.menu {
+    display: flex;
+    width: 5em;
+    justify-content: space-between;
+    margin-left: 450%;
+
+}
+@media only screen and(max-width: 330px){
+    .header{
+        display: flex;
+        display: relative;
+    }
+    .menu{display: flex;
+        justify-content: flex-end;
+    }
+    .item{
+        align-items: column;
+    }
+    .parrafo{
+        display: relative;
+        align-items: column;
+    }
+    .imagenPrincipal{
+        font-size: 300px;
+        display: flex;
+    }
+}
+.item {
+    display: block;
+    margin: 0 1rem 0 0 ;
+    list-style: none;
+    transition: all 0.5s;
+}
+.item:hover{
+    transform: translate(5px, 10px);
+}
+.item a:hover {
+    color: #295073;
+}
+a {
+    text-decoration: none;    
+    color: black;
+    font-size: 1.35rem;
+}
+/* ----------FIN HEADER----------- */
+
+/* ---------BODY--------- */
+#imagenBootstrap{
+    height: 45rem;
+}
+.subtitulo{
+        /*  LETRA DE GOOGLE FONTS INICIO */
+        font-family: 'Akronim', cursive;
+        /*  LETRA DE GOOGLE FONTS FIN */
+    color: #295073;
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+}
+.subtitulo:hover{
+    transform: scale(1.2, 1.2);
+}
+body {
+    /* rgba(242,170,107,1)  */
+    background-color: #F2AA6B;
+}
+
+.parrafo {  /* ACA APLICO GRIDS */
+    color: #295073;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "imagen texto texto";
+}
+
+.parrafo .imagenPrincipal{
+    grid-area: imagen;
+    height: 20rem;
+    margin: 3.5rem 1.5rem 1.5rem 4rem;
+}
+
+.parrafo .texto { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: texto; 
+    font-style: normal;
+    text-align: right;
+    line-height: 20px;
+    margin: 2rem 5rem 2rem 2rem;
+    font-size: 1.4rem;
+    text-align: justify;
+    line-height: 1.5rem;
+}
+.textos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: texto; 
+    font-style: normal;
+    text-align: right;
+    line-height: 20px;
+    margin: 2rem 18rem 2rem 18rem;
+    font-size: 1.4rem;
+    text-align: justify;
+    line-height: 1.5rem;
+}
+
+
+/* -------FIN BODY------ */
+
+.ListasImpreoras{
+    text-decoration: none;
+    
+}
+
+
+.LinksDeCompra a{
+    color: black;
+    text-decoration: none;
+}
+.Redes{
+    color: black;
+    text-decoration: none;
+}
